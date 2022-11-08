@@ -7,7 +7,23 @@ print("Rock breaks Scissors,\nScissors cut Paper, and \nPaper covers Rock.")
 w, l, t = 0, 0, 0
 
 def determine_outcome(user, comp):
-  pass
+  outcomes = {
+  "rock": {
+    "win": "scissors",
+    "lose": "paper",
+    "tie": "rock"
+  },
+  "scissors": {
+    "win": "scissors",
+    "lose": "paper",
+    "tie": "rock"
+  },
+  "paper": {
+    "win": "scissors",
+    "lose": "paper",
+    "tie": "rock"
+  }
+  }
 
 
 def RockPaperScissors(n=0):
