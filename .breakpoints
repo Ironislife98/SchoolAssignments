@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "RockPaperScissors/main.py": [
+      {
+        "id": "7e1672ed-00f7-4f32-9f67-a612c44fcd3a",
+        "line": 10,
+        "version": 739,
+        "index": 281
+      }
+    ]
+  }
 }
