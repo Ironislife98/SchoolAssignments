@@ -24,20 +24,24 @@ def RandomNumbers(test=False):
                 sum_nums = sum_nums + randNums[i]
             avg_num = 0
             for i in randNums:
-                avg_num += randNums
+                avg_num += i
             avg_num /= len(randNums)
         else:
             testList = []
             testLength = int(input("Number of elements in the test list:"))
-            for i in range(testLength):
-                print(testList[i])
-                sum_nums = sum_nums + testList[i]
-                num_random = testLength[i]
+            for j in range(testLength):
+                testList.append(int(input("")))
+            print()
+            for i in testList:
+                print(i)
+                sum_nums += i
+                num_random = testLength
             avg_num = 0
             for i in testList:
-                avg_num += testList
+                avg_num += i
             avg_num /= len(testList)
-        print(f"Average of random numbers is: {round(avg_num, 1)}\n")
+        print(f"\nAverage of random numbers is: {round(avg_num, 1)}\n")
         if input("Enter 1 to try again, or any other integer to exit: ") != "1":
             break
+        print()
 RandomNumbers(True)
